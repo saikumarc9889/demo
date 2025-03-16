@@ -1,0 +1,8 @@
+{
+    "hostOn":"local",
+    "hosted_url":"http://localhost:4200/",
+    "defaultApp":"pmo",
+    "LOCAL_STORAGE_TOKEN":"PMO_TOKEN",
+    "hit_URL":"hit_URL_V1",
+    "AUTH_API":"http://localhost:3000/auth/"
+}

@@ -6,12 +6,27 @@ import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { LocalComponent } from './local/local.component';
+import { StoreModule } from '@ngrx/store';
+import { appReducer } from './stores/app.store';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+
+export const filteredStoreDevtoolsOptions: any = {
+  name: 'LDS PMO',
+  maxAge: 135,
+  // logOnly: environment.production,
+  //monitor: filterActionsMiddleware,
+  /* actionSanitizer: (action: Action) => {
+    return actionsToHide.includes(action.type) ? { ...action, type: 'FILTERED_ACTION' } : action;
+  }, */
+};
 
 export const CommonConfig:NgModule = {
   declarations:[],
   providers:[],
   imports:[
-    BrowserModule
+    BrowserModule,
+    StoreModule.forRoot(appReducer),
+    StoreDevtoolsModule.instrument(filteredStoreDevtoolsOptions),
   ],
   bootstrap:[]
 }

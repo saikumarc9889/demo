@@ -1,0 +1,196 @@
+{
+    "framework": {
+        "id": "CA-1",
+        "name": "Calendar",
+        "layout": "fixed",
+        "version": 0.0,
+        "type": "application"
+    },
+    "settings": {
+        "title": "FY20 Consulting Milestone Program Calendar",
+        "version": 0.0,
+        "preloadMode": "screen",
+        "debugMode": false,
+        "appMode": "normal",
+        "width": 1256,
+        "height": 800,
+        "isScalable": true,
+        "scaleUP": false,
+        "fontSize": "18px",
+        "layout": "fixed"
+    },
+    "preloadAssets": [],
+    "texts": [
+        {
+            "id": "sample",
+            "text": "Sample Text",
+            "noDelete": true
+        }
+    ],
+    "assets": [],
+    "popups": [
+        {
+            "id": "dbError",
+            "type": "alert",
+            "maxHeight": "300px",
+            "width": "50%",
+            "title": "alert",
+            "yesBtnLabel": "exit",
+            "noBtnLabel": "no",
+            "closeBtnLabel": "close",
+            "msg": "dbError_msg",
+            "asset": ""
+        }
+    ],
+    "calendarSettings": {
+        "weekDays": [
+            "Sun",
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat"
+        ],
+        "startOfWeek": 1,
+        "months": [
+            {
+                "id": 0,
+                "label": "January"
+            },
+            {
+                "id": 1,
+                "label": "February"
+            },
+            {
+                "id": 2,
+                "label": "March"
+            },
+            {
+                "id": 3,
+                "label": "April"
+            },
+            {
+                "id": 4,
+                "label": "May"
+            },
+            {
+                "id": 5,
+                "label": "June"
+            },
+            {
+                "id": 6,
+                "label": "July"
+            },
+            {
+                "id": 7,
+                "label": "August"
+            },
+            {
+                "id": 8,
+                "label": "September"
+            },
+            {
+                "id": 9,
+                "label": "October"
+            },
+            {
+                "id": 10,
+                "label": "November"
+            },
+            {
+                "id": 11,
+                "label": "December"
+            }
+        ],
+        "minYear": 0,
+        "currentDateString": "",
+        "byDefaultNoDateSelected": true,
+        "allFiltersInterlinked": false,
+        "contact": "CBOLeadershipDevelopment@deloitte.com",
+        "showOnlyStartDay": false
+    },
+    "calenderEvents": [
+        {
+            "eventName": "Understanding Your Business Case",
+            "offering": [
+                "Cross-CBO",
+                "Application Modernization & Innovation (AMI)",
+                "Cloud Engineering (CE)",
+                "Core Industry Solutions (CIS)",
+                "Core Technology Operations (CTO)",
+                "Operations Transformation (OT)"
+            ],
+            "level": [
+                "Senior Manager, Specialist Leader"
+            ],
+            "trainingType": "Virtual Instructor-Led",
+            "startDateString": "2021-9-17",
+            "endDateString": "2021-9-17",
+            "Objectives": "<ul><li>Explain the on-deck process, requirements, and expectations - and why the process is the way it is.</li><li>Describe the elements of a successful candidacy.</li> <li>Share their executive storyline and receive feedback from PMDs and peers. (Emphasis on the content, not presentation skills.) Plan next steps to further develop and evolve their Executive Storyline.</li></ul>",
+            "startTime": [
+                "11:00"
+            ],
+            "endTime": [
+                "13:00"
+            ],
+            "timeZone": "EST",
+            "RegistrationType": "Open to all",
+            "RegistrationLink": "https://sabacloud.deloitteresources.com/Saba/Web_spf/E103PRD0001/common/leclassview/virtc-0001747682 "
+        },
+        {
+            "eventName": "Charting Your Career Path (Session 1 of 2)",
+            "offering": [
+                "Cross-CBO",
+                "Application Modernization & Innovation (AMI)",
+                "Cloud Engineering (CE)",
+                "Core Industry Solutions (CIS)",
+                "Core Technology Operations (CTO)",
+                "Operations Transformation (OT)"
+            ],
+            "level": [
+                "Senior Manager, Specialist Leader"
+            ],
+            "trainingType": "Virtual Instructor-Led",
+            "startDateString": "2021-10-19",
+            "endDateString": "2021-10-19",
+            "Objectives": "<p>Upon completion the learner will be able to:</p><ul><li>Describe common career path destinations, including the expectations and considerations associated with each path;</li><li>Self-reflect on their personal career path alignment, both during and after the session;</li><li>Be more confident when deciding on their targeted career path</li></ul><br><b>Note:</b><i> This virtual training is divided into two sessions (Oct 19 and 22, 2021). It is mandatory to attend both. Click the Register button to enroll for both Session 1 and 2.</i>",
+            "startTime": [
+                "11:00"
+            ],
+            "endTime": [
+                "12:00"
+            ],
+            "timeZone": "EST",
+            "RegistrationType": "Open to all",
+            "RegistrationLink": "https://sabacloud.deloitteresources.com/Saba/Web_spf/E103PRD0001/common/leclassview/virtc-0001779827 "
+        },
+        {
+            "eventName": "Charting Your Career Path (Session 2 of 2)",
+            "offering": [
+                "Cross-CBO",
+                "Application Modernization & Innovation (AMI)",
+                "Cloud Engineering (CE)",
+                "Core Industry Solutions (CIS)",
+                "Core Technology Operations (CTO)",
+                "Operations Transformation (OT)"
+            ],
+            "level": [
+                "Senior Manager, Specialist Leader"
+            ],
+            "trainingType": "Virtual Instructor-Led",
+            "startDateString": "2021-10-22",
+            "endDateString": "2021-10-22",
+            "Objectives": "<p>Upon completion the learner will be able to:</p><ul><li>Describe common career path destinations, including the expectations and considerations associated with each path;</li><li>Self-reflect on their personal career path alignment, both during and after the session;</li><li>Be more confident when deciding on their targeted career path</li></ul><br><b>Note:</b><i> This virtual training is divided into two sessions (Oct 19 and 22, 2021). It is mandatory to attend both. Click the Register button to enroll for both Session 1 and 2.</i>",
+            "startTime": [
+                "11:00"
+            ],
+            "endTime": [
+                "12:30"
+            ],
+            "timeZone": "EST",
+            "RegistrationType": "Open to all",
+            "RegistrationLink": "https://sabacloud.deloitteresources.com/Saba/Web_spf/E103PRD0001/common/leclassview/virtc-0001779827 "
+        }
+    ]
+}

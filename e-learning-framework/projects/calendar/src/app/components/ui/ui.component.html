@@ -1,0 +1,8 @@
+<div class="app-view-container" [ngClass]="{'app-view-container-grid': !this.service.config.settings.isScalable}"
+    (window:resize)="onResize($event)" [ngStyle]="{overflow: this.service.config.settings.isScalable?'hidden':'auto'}">
+    <div id="app-view" class="app-view">
+        <cmp-header class="header"></cmp-header>
+
+        
+    </div>
+</div>

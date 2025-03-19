@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-local',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   templateUrl: './local.component.html',
   styleUrl: './local.component.scss'
 })
-export class LocalComponent {
+export class LocalComponent extends AppComponent {
+  
 
 }

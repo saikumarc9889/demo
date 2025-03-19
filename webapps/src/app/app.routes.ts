@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { AuthGuard } from './guards/auth.guard';
 
 export const routes: Routes = [];
 
@@ -28,6 +29,16 @@ export function CustomRouters($isSSO?:boolean,$isUnderMaintaince?:boolean,$onLev
             {
                 path:'pmo-login',
                 loadComponent:() => import('./shared/pmo-login/pmo-login.component').then(c=>c.PmoLoginComponent)
+            },
+            {
+                path:'pmo',
+                canActivateChild: [AuthGuard],
+                data: {
+                    preload: true,
+                    noAuth: 'pmo-login',
+                    noAccess: 'pmo'
+                },
+                loadChildren:() => import('./apps/pmo/pmo.module').then(m=>m.PmoModule)
             },
             ...CommonRouter,
             {

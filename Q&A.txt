@@ -1,0 +1,47 @@
+1. What is Service ?
+a. a service is a class that helps you organize and share code across different parts of your app. It can handle tasks like getting data from a server, processing information, or managing user input. By using services, you keep your components clean and focused on displaying data, making your app easier to maintain and test.
+
+2. Benefits of Using Services:
+
+ - Reusability: Services can be reused across multiple components.
+ - Maintainability: Business logic is centralized, making it easier to update and maintain.
+ - Testability: Services can be easily mocked and tested independently of components.
+ - Modularity: Services promote a modular architecture, making the application more scalable.
+
+ 3. What is NGRX ?
+ a. NgRx is a framework for building reactive applications in Angular. It is inspired by Redux.
+    it provides a way to manage the state of your application in a consistent and predictable manner.
+
+4. Key Concepts of NgRx ?
+a. 1. State Management: 
+
+    NgRx helps manage the state of your application in a single, centralized store.
+    This makes it easier to track and manage the state across different parts of your app.
+    
+   2.Actions:
+
+    Actions are plain objects that describe an event or change in the state.
+    They have a type property that indicates the type of action being performed.
+
+    3.Reducers:
+
+    Reducers are pure functions that take the current state and an action, and return a new state.
+    They define how the state should change in response to actions.
+
+    4.Selectors:
+
+    Selectors are functions used to extract specific pieces of data from the store.
+    They help in accessing the state in a more efficient and reusable way.
+
+    5.Effects:
+
+    Effects handle side effects, such as fetching data from an API or interacting with external services.
+    They listen for specific actions and perform tasks without affecting the state directly.
+
+5. how to improve performance in angular ?
+a. 1. Lazy Loading Modules
+   2. OnPush Change Detection Strategy
+   3. Use Pure Pipes
+
+6. What is DJ ?
+a. In Angular, Dependency Injection (DI) is a way to provide parts of your app (like services) to other parts (like components) without having to create them manually. This makes your code cleaner, easier to test, and more modular.

@@ -1,0 +1,83 @@
+$default-color: #000 !default;
+$white-color: #fff !default;
+$text-color: #000 !default;
+$dark-color: #000 !default;
+
+@mixin sidebar-color($color){
+    &:after{
+      background: $color;
+    }
+  }
+
+  @mixin sidebar-text-color($text-color){
+    .nav {
+      li {
+        a,
+        a i,
+        a[data-toggle="collapse"],
+        a[data-toggle="collapse"] i,
+        a[data-toggle="collapse"] ~ div > ul > li .sidebar-mini-icon,
+        a[data-toggle="collapse"] ~ div > ul > li > a {
+          color: $text-color;
+          opacity: .7;
+        }
+
+        &:hover:not(.active) > a,
+        &:focus:not(.active) > a {
+            opacity: 1;
+        }
+      }
+    }
+
+    .logo {
+      .simple-text {
+        color: $text-color;
+      }
+      &:after {
+        background-color: $text-color;
+        opacity: .4;
+      }
+    }
+
+    .user {
+      .info a span,
+      .nav .sidebar-mini-icon,
+      .nav .sidebar-normal {
+        color: $text-color !important;
+      }
+      &:after {
+        background-color: $text-color;
+        opacity: .4;
+      }
+    }
+}
+
+.wrapper{
+    position: relative;
+    top: 0;
+    height: 100vh;
+
+    &.wrapper-full-page{
+        min-height: 100vh;
+        height: auto;
+    }
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    bottom: 0;
+    width: 260px;
+    left: 0;
+    z-index: 1030;
+    border-right: 1px solid #ddd;
+
+    &[data-color="white"]{
+        @include sidebar-color($white-color);
+        @include sidebar-text-color($default-color);
+      }
+      &[data-color="black"]{
+        @include sidebar-color($dark-color);
+      }
+}
